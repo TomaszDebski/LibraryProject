@@ -18,7 +18,6 @@
 				<span ng-show="myForm.username.$error.required && myForm.username.$dirty">This is a
 					required field</span>
 				<div ng-if="myForm.$error.usernameExists">username exists already</div>
-				<!-- 			 <span ng-show="myForm.email.$invalid">This field is invalid </span>  -->
 			</div>
 			
 			<label for="password">Password</label> 
@@ -34,11 +33,8 @@
 			<div class="has-error" ng-show="myForm.$dirty">
 				<span ng-show="myForm.password.$error.required && myForm.password.$dirty">This is a
 					required field</span>
-				<!-- 			 <span ng-show="myForm.email.$invalid">This field is invalid </span>  -->
 			</div>
 		</fieldset>
-		<!-- 	<button type="submit" class="btn btn-primary" ng-click="update(data)" ng-show="{{isEdit}}">Edit</button> -->
-		
 		<button type="submit" class="btn btn-primary" ng-click="crateAccount(data)"
 			ng-disabled="myForm.username.$error.required || myForm.password.$error.required || myForm.$error.usernameExists">Create account</button>
 	</form>

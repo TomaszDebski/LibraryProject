@@ -12,4 +12,4 @@ angular.module('app.service.returnBook',[])
 			return locData;
 		}
 	}
-})
+});

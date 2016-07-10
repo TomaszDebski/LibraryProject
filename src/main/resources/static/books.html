@@ -8,7 +8,7 @@
 				<th>Available</th>
 				<th>Borrow date</th>
 				<th>Return date</th>
-				<th ng-show="isAdmin">Username</th>
+				<!--<th ng-show="isAdmin">Username</th>-->
 				<th ng-show="isAdmin">Edit book</th>
 				<th ng-show="isAdmin">Delete book</th>
 			</tr>
@@ -21,7 +21,7 @@
 				<td><input type="checkbox" ng-checked="{{book.available}}" ng-disabled="true"></td>
 				<td>{{book.bookBorrowDate | date : format : timezone}}</td>
 				<td>{{book.returnDateBook | date : format : timezone}}</td>
-				<td ng-show="isAdmin">{{book.orderPack}}</td>
+				<!--<td ng-show="isAdmin">{{book.orderPack}}</td>-->
 				<td ng-show="isAdmin"><button class="btn" ng-click="transfer(book)">Edit</button></td>
 				<td ng-show="isAdmin"><button class="btn btn-danger" ng-click="delete(book.id)">Delete</button></td>
 			</tr>
@@ -32,19 +32,42 @@
 	<form name="myForm" ng-show="isAdmin">
 	<button type="button" class="btn btn-primary" ng-click="addNew()">Add new book</button>
 		<fieldset class="form-group">
-			<label for="title">title</label> <input type="text" class="form-control" id="title"
-				placeholder="title" ng-model="data.title" ng-disabled="isDisabled" required>
+			<label for="title">title</label>
+			<input
+					type="text"
+					class="form-control"
+					id="title"
+					placeholder="title"
+					ng-model="data.title"
+					ng-disabled="isDisabled"
+					required>
 			<div class="has-error" ng-show="myForm.$dirty">
 				<span ng-show="myForm.title.$dirty && myForm.title.$error.required">This is a required field</span>
-				<!-- 			 <span ng-show="myForm.email.$invalid">This field is invalid </span>  -->
 			</div>
-			<label for="category">category</label> <input type="text" class="form-control" id="category"
-				placeholder="category" ng-model="data.category" ng-disabled="isDisabled">
+			<label for="author">author</label>
+			<input
+					type="text"
+					class="form-control"
+					id="author"
+					placeholder="author"
+					ng-model="data.author"
+					ng-disabled="isDisabled"
+					required>
+			<div class="has-error" ng-show="myForm.$dirty">
+				<span ng-show="myForm.author.$dirty && myForm.author.$error.required">This is a required field</span>
+			</div>
+			<label for="category">category</label>
+			<input
+					type="text"
+					class="form-control"
+					id="category"
+					placeholder="category"
+					ng-model="data.category"
+					ng-disabled="isDisabled">
 		</fieldset>
-		<!-- 	<button type="submit" class="btn btn-primary" ng-click="update(data)"">Edit</button> -->
-		<!-- 	<button type="submit" class="btn btn-primary" ng-click="add(data)" ng-show="{{!isEdit}}">Add</button> -->
-		<input type="button" class="btn btn-primary" ng-click="save(data)" ng-disabled="isDisabled"
-			value="Save">
+		<button type="submit" class="btn btn-primary" ng-click="save(data)"
+				ng-disabled="myForm.title.$error.required || myForm.author.$error.required"
+			>Save</button>
 	</form>
 </div>
 

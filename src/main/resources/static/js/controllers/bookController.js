@@ -17,6 +17,7 @@ angular.module('app.controller.book',[])
 		isEdit = true;
 		edit.id = book.id;
 		edit.title = book.title;
+		edit.author = book.author;
 		edit.category = book.category;
 		$scope.isDisabled = false;
 	};
@@ -25,6 +26,7 @@ angular.module('app.controller.book',[])
 			BookService.update(data,function(){
 				refreshMethod();
 				edit.title = "";
+				edit.author = "";
 				edit.category = "";
 				$scope.isDisabled = true;
 			});
@@ -33,6 +35,7 @@ angular.module('app.controller.book',[])
 			BookService.save(data,function(){
 				refreshMethod();
 				edit.title = "";
+				edit.author = "";
 				edit.category = "";
 				$scope.isDisabled = true;
 			});
@@ -43,6 +46,7 @@ angular.module('app.controller.book',[])
 		isEdit = false;
 		$scope.data.id = "";
 		$scope.data.title = "";
+		$scope.data.author = "";
 		$scope.data.category = "";
 		$scope.isDisabled = false;
 	}
@@ -51,4 +55,4 @@ angular.module('app.controller.book',[])
 			refreshMethod();
 		});
 	}
-})
+});

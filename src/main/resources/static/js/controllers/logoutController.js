@@ -4,12 +4,9 @@
 angular.module('app.controller.logout', []).controller(
 		'logoutController',
 		function($scope, $http, $rootScope, $location, $window) {
-			console.log("jestem w logout");
 			$http.post("/logout").success(
 					function(data, status, headers, config) {
-//						console.log("udało się wylogować")
 					}).error(function(data, status, headers, config) {
-//				console.log("nie wylogowano");
 			})
 			$rootScope.authenticated = false;
 			$rootScope.user = "";

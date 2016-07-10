@@ -5,7 +5,6 @@ angular.module('app.controller.bookReader',[])
 .controller('booksReaderController', function($scope,$http,bookReaderService,$location,controllersService) {
 	var refreshFunction = function(){
 		bookReaderService.query(function(data){
-			console.log("bookReaders ",data);
 			$scope.bookReaders = data;
 		});
 	}
@@ -24,5 +23,4 @@ angular.module('app.controller.bookReader',[])
 			refreshFunction();
 		});
 	}
-
-})
+});

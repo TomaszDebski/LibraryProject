@@ -7,4 +7,4 @@ angular.module('app.service.book', ['ngResource'])
 		{ 
 		  'update' :{method: "PUT"} 
 		  })
-}])
+}]);

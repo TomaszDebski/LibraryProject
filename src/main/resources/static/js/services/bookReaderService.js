@@ -8,5 +8,4 @@ angular.module('app.service.bookReader', [])
 		'query':  {method:'GET', isArray:true},
 		'update' :{method: "PUT"} 
 		  })
-	
-}])
+}]);
