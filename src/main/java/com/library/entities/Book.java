@@ -13,6 +13,10 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Entity
 @Table(name ="Book")
 public class Book {

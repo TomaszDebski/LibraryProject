@@ -13,6 +13,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import javax.annotation.PostConstruct;
 import java.util.Date;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @SpringBootApplication
 public class LibraryProjectApplication {
 

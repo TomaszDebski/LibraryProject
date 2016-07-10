@@ -2,26 +2,16 @@ package com.library.entities;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.NamedAttributeNode;
-import javax.persistence.NamedEntityGraph;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.NamedSubgraph;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Entity
-@NamedQueries(value = { @NamedQuery(name = "BookReader.all", query = "select br from BookReader br") })
-@NamedEntityGraph(name = "graph.BookReader", 
-attributeNodes = @NamedAttributeNode(value = "orderPacks", subgraph = "orderPack"), 
-subgraphs = @NamedSubgraph(name = "orderPack", attributeNodes = @NamedAttributeNode("books")))
+@Table(name = "BookReader")
 public class BookReader {
 
 	@Id

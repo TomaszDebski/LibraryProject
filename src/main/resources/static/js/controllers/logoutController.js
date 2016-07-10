@@ -1,3 +1,6 @@
+/**
+ * Created by Tomasz Dębski on 10.07.10.
+ */
 angular.module('app.controller.logout', []).controller(
 		'logoutController',
 		function($scope, $http, $rootScope, $location, $window) {

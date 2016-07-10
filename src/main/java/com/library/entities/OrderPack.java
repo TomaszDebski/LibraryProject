@@ -17,6 +17,10 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Entity
 @Table(name="OrderPack")
 public class OrderPack {
@@ -31,8 +35,7 @@ public class OrderPack {
 	private Date borrowDate;
 	@Column(name="returnDate")
 	private Date returnDate;
-	
-//	@OneToOne
+
 	@ManyToOne
 	@JoinColumn(name = "bookReader_orderPack_id")
 	@JsonBackReference

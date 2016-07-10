@@ -1,3 +1,6 @@
+/**
+ * Created by Tomasz Dębski on 10.07.10.
+ */
 angular.module('app.controller.home', [])
 .controller('homeController', function($scope,$http,$rootScope) {
 //	$scope.showLogout = $rootScope.authenticated;

@@ -36,24 +36,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	 @Autowired
 	    public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
-//	        auth.inMemoryAuthentication().withUser("user").password("user").roles("USER");
-//	        auth.inMemoryAuthentication().withUser("admin").password("admin").roles("ADMIN");
-//	        auth.inMemoryAuthentication().withUser("dba").password("root123").roles("ADMIN","DBA");
-//	        auth.authenticationProvider(CustomAuthenticationProvider);
-//		 	auth.userDetailsService(userDetailsService);
-	        
-//	        auth.jdbcAuthentication().dataSource(dataSource)
-//			.usersByUsernameQuery(
-//				"select name,password,'true' as enabled from User where name=?")
-//			.authoritiesByUsernameQuery(
-//				"select name, role from User where name=?");
 	        auth
 	        .jdbcAuthentication().dataSource(dataSource)
 			.usersByUsernameQuery(
 				"select username,password,'true' as enabled from bookReader where username=?")
 			.authoritiesByUsernameQuery(
 				"select username, role from bookReader where username=?")
-//				.passwordEncoder(passwordEncoder())
+				.passwordEncoder(passwordEncoder())
 				;
 	    }
 	     
@@ -61,33 +50,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	    protected void configure(HttpSecurity http) throws Exception {
 	       
 	      http
-//	      .formLogin().and().logout().and()
 	      .authorizeRequests()
-//	      	.antMatchers("/","/index").permitAll()
-//	        .antMatchers("/logList").authenticated()
-//	        .antMatchers("/addUser","/adminPanel")
-//	        .authenticated()
-//	        .hasRole("ADMIN")
-//	      	.authorizeRequests()
-//	      	.antMatchers("/","/index").permitAll()
-//	        .antMatchers("/logList")
-////	        .authenticated()
-//	        .access("hasRole('ROLE_ADMIN')")
 	        .antMatchers("/index.html", "/home.html", "/login.html", "/").permitAll()
-//	        .anyRequest().authenticated()
-	        .and()
+	        	.and()
 	        .formLogin()
-//	        .defaultSuccessUrl("/")
-//	        .loginPage("/login")
-//	        .loginPage(env.getProperty("security.loginPage"))
-//	        .loginProcessingUrl("/j_spring_security_check").failureUrl("/loginPage?error=true")
-//	        .usernameParameter("username").passwordParameter("password")
-//	        .defaultSuccessUrl("/")
-	        .and()
-	        .exceptionHandling().accessDeniedPage("/Access_Denied")
-//	        .and()
-//	        .logout().logoutSuccessUrl("/login.html")
-	        .and()
+//	        	.and()
+//	        .exceptionHandling().accessDeniedPage("/Access_Denied")
+	        	.and()
 	        .addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class)
 	        .csrf().csrfTokenRepository(csrfTokenRepository());
 	    }

@@ -41,22 +41,12 @@ public class OrderPackDaoImpl implements OrderPackDao {
 	@Override
 	public void updateOrderPack(OrderPack orderPack) {
 		entityManager.merge(orderPack);
-		
 	}
 
 	@Override
 	public void removeOrderPack(OrderPack orderPack) {
 		if(entityManager.contains(orderPack)){
-			System.out.println("usuwam");
 			entityManager.remove(orderPack);
 		}
 	}
-
-//	@Override
-//	public List<Book> getAllBooksWithoutId() {
-//		return entityManager.createQuery("from Book b where b.bookReader.id is null").getResultList();
-//	}
-	
-	
-
 }

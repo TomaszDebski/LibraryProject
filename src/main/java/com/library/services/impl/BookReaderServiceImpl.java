@@ -6,6 +6,7 @@ import com.library.dao.BookReaderDao;
 import com.library.entities.BookReader;
 import com.library.services.BookReaderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 /**
@@ -33,6 +34,8 @@ public class BookReaderServiceImpl implements BookReaderService {
 		if (bookReader.getRole() == null){
 			bookReader.setRole("ROLE_USER");
 		}
+		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+		bookReader.setPassword(encoder.encode(bookReader.getPassword()));
 		bookReaderDao.addBookReader(bookReader);
 	}
 
@@ -47,14 +50,8 @@ public class BookReaderServiceImpl implements BookReaderService {
 	}
 
 	@Override
-	public List<BookReader> getAllBookReaderGraph() {
-		return bookReaderDao.getAllBookReaderGraph();
-	}
-
-	@Override
 	public BookReader getBookReaderByUsername(String username) {
 		return bookReaderDao.getBookReaderByUsername(username);
 	}
-
 
 }

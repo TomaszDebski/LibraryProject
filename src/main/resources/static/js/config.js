@@ -1,9 +1,12 @@
+/**
+ * Created by Tomasz Dębski on 10.07.10.
+ */
 angular.module('app.config', [])
 .config(function($routeProvider, $httpProvider) {
 	$routeProvider
 	.when('/', {
 		templateUrl : 'home.html',
-		controller : 'navigation',
+		controller : 'navigationController',
 		controllerAs: 'controller'
 	})
 	.when('/login', {
@@ -27,7 +30,7 @@ angular.module('app.config', [])
 		controllerAs: 'controller'
 	})
 	.when('/showBookReader', {
-		templateUrl : 'czytelnicy.html',
+		templateUrl : 'bookReaders.html',
 		controller : 'booksReaderController',
 		controllerAs: 'controller'
 	}) 

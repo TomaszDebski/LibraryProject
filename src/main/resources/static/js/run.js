@@ -1,3 +1,6 @@
+/**
+ * Created by Tomasz Dębski on 10.07.10.
+ */
 angular.module('app.run', [])
 .run(function($rootScope, $http, $location, $route,$window){
 	$rootScope.$on('$routeChangeStart', function(event, next, current) {

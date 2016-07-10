@@ -1,3 +1,6 @@
+/**
+ * Created by Tomasz Dębski on 10.07.10.
+ */
 angular.module('app.controller.returnBook', [])
 .controller('returnBookController', function($scope,$location,returnBookService,BookService,controllersService) {
 	$scope.book = returnBookService.getData();

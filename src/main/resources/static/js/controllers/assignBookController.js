@@ -1,3 +1,6 @@
+/**
+ * Created by Tomasz Dębski on 10.07.10.
+ */
 angular.module('app.controller.assignBook', []).controller(
 		'assignBooksController',
 		function($http, $scope,$location, BookService, bookReaderService,
@@ -6,10 +9,8 @@ angular.module('app.controller.assignBook', []).controller(
 			$http.get("/bookReaders/" + $rootScope.user)
 			.then(function(value) {
 				$scope.Reader = value.data;
-				console.log("data to jest " ,$scope.Reader);
 			})
 			
-			console.log("controllersService " ,controllersService.getData());
 			var actualBook = {};
 			refreshFunction = function() {
 				$http.get("/bookWithoutId").then(function(value) {
@@ -18,14 +19,14 @@ angular.module('app.controller.assignBook', []).controller(
 
 				}, function(value) {
 					$scope.books = value;
-
 				});
 			}
+
 			var orderPack = {
-					bookCount : 0,
-					borrowDate : new Date(),
-					returnDate : new Date(),
-					books : []
+				bookCount : 0,
+				borrowDate : new Date(),
+				returnDate : new Date(),
+				books : []
 			}
 			refreshFunction();
 			$scope.assign = function(book) {
@@ -37,25 +38,22 @@ angular.module('app.controller.assignBook', []).controller(
 				returnDate.setHours(0, 0, 0, 0);
 				book.available = false;
 				var newBook = {
-						id : book.id,
-						title : book.title,
-						category : book.category,
-						bookBorrowDate : borrowDate,
-						returnDateBook : returnDate,
-						available : false
+					id : book.id,
+					title : book.title,
+					category : book.category,
+					bookBorrowDate : borrowDate,
+					returnDateBook : returnDate,
+					available : false
 				}
 				actualBook.choosed = true;
 				orderPack.books.push(newBook);
 
 			}
 			$scope.confirm = function() {
-				console.log("$scope.Reader " ,$scope.Reader);
-//				if ($scope.Reader.orderPacks == null){
-					$scope.Reader.orderPacks.push(orderPack);
-					bookReaderService.update($scope.Reader,function(){
-						refreshFunction();
-					});
-//				}
+				$scope.Reader.orderPacks.push(orderPack);
+				bookReaderService.update($scope.Reader,function(){
+					refreshFunction();
+				});
 			}
 			$scope.clear = function() {
 				angular.forEach($scope.booksAssign, function(value, key) {
@@ -69,4 +67,4 @@ angular.module('app.controller.assignBook', []).controller(
 			$scope.back = function(){
 				$location.path("/showBookReader");
 			}
-		})
+		});

@@ -20,9 +20,5 @@ public interface BookReaderDao {
 	
 	void removeBookReader(BookReader bookReader);
 	
-	Long bookReaderCount();
-	
-	List<BookReader> getAllBookReaderGraph();
-	
 	BookReader getBookReaderByUsername(String username);
 }

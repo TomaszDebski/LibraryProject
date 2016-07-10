@@ -8,6 +8,10 @@ import com.library.services.OrderPackService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Service
 public class OrderPackServiceImpl implements OrderPackService {
 	
@@ -38,10 +42,5 @@ public class OrderPackServiceImpl implements OrderPackService {
 	public void removeOrderPack(OrderPack orderPack) {
 		orderPackDao.removeOrderPack(orderPack);
 	}
-
-//	@Override
-//	public List<Book> getAllBooksWithoutId() {
-//		return bookDao.getAllBooksWithoutId();
-//	}
 
 }

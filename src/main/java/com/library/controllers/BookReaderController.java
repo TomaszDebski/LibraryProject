@@ -31,7 +31,6 @@ public class BookReaderController {
 	@RequestMapping(value="/bookReader")
 	public List<BookReader> getAllBookReader(){
 		return bookReaderService.getAllBookReader();
-//		return bookReaderService.
 	}
 	
 	@RequestMapping(value="/bookReader/{id}")
@@ -50,22 +49,13 @@ public class BookReaderController {
 		bookReaderService.removeBookReader(bookReaderbyId);
 	}
 	
-	@RequestMapping(value="/bookReader/getAll")
-	public List<BookReader> getAllBookReaderGraph(){
-		return bookReaderService.getAllBookReaderGraph();
-	}
+//	@RequestMapping(value="/bookReader/getAll")
+//	public List<BookReader> getAllBookReaderGraph(){
+//		return bookReaderService.getAllBookReaderGraph();
+//	}
 	
 	@RequestMapping(value="/bookReaders/{bookReaderName}")
 	public BookReader getBookReaderByUsername(@PathVariable String bookReaderName){
 		return bookReaderService.getBookReaderByUsername(bookReaderName);
 	}
-	
-//	@RequestMapping("/isAvailable")
-//	public String isAvailable(@RequestParam String username) {
-//		Boolean available = bookReaderService.getBookReaderByUsername(username) == null;
-//		System.out.println("is available" + available);
-//		return available.toString();
-//	}
-	
-
 }

@@ -41,13 +41,11 @@ public class BookDaoImpl implements BookDao {
 	@Override
 	public void updateBook(Book book) {
 		entityManager.merge(book);
-
 	}
 
 	@Override
 	public void removeBook(Book book) {
 		if (entityManager.contains(book)) {
-			System.out.println("usuwam");
 			entityManager.remove(book);
 		}
 	}
@@ -57,11 +55,6 @@ public class BookDaoImpl implements BookDao {
 		return entityManager.createQuery("from Book b where b.orderPack.id is null", Book.class).getResultList();
 	}
 
-	// @Override
-	// public List<Book> getAllBooksWithBorrowDate() {
-	// return entityManager.createQuery("select b, c.borrowDate from Book b join
-	// b.order c").getResultList();
-	// }
 	@Override
 	public List<Book> getAllBooksForBookReaderByName(String name){
 		List<Book> resultList = entityManager.createQuery("select b from Book b join b.orderPack o join o.bookReader r where r.readerName = :username", Book.class)
@@ -69,5 +62,4 @@ public class BookDaoImpl implements BookDao {
 		.getResultList();
 		return resultList;
 	}
-
 }

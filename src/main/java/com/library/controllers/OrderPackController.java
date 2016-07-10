@@ -28,40 +28,22 @@ public class OrderPackController {
 
 	@RequestMapping(value = "/orderPack",method= RequestMethod.POST)
 	public void addOrderPack(@RequestBody OrderPack orderPack){
-//		System.out.println("Wchodzę w add");
-//		System.out.println("book " + book.getTitle());
 		orderpackService.addOrderPack(orderPack);
-		System.out.println("orderPack " + orderPack.getId());
 	}
 	
 	@RequestMapping(value="/orderPack/{id}")
 	public OrderPack getOrderPackById(@PathVariable("id") long id){
-//		System.out.println("Wchodzę w getBook");
 		return orderpackService.getOrderPackbyId(id);
 	}
 	
 	@RequestMapping(value="/orderPack/{id}",method=RequestMethod.PUT)
 	public void updateOrderPack(@PathVariable("id") long id,@RequestBody OrderPack orderPack){	
-//		System.out.println("Wchodzę w update");
-//		System.out.println("id " + id);
-//		OrderPack oldBook = orderpackServicmanage.getOrderPackbyId(id);
-//		System.out.println(book.toString());
-//		System.out.println("Tytuł " + book.getTitle());
-//		oldBook.setTitle(book.getTitle());
-//		oldBook.setCategory(book.getCategory());
 		orderpackService.updateOrderPack(orderPack);
 	}
 	
 	@RequestMapping(value="/orderPack/{id}",method=RequestMethod.DELETE)
 	public void deleteBook(@PathVariable("id") long id){
-//		System.out.println("Wchodzę w delete");
 		OrderPack orderPack = orderpackService.getOrderPackbyId(id);
 		orderpackService.removeOrderPack(orderPack);
 	}
-	
-//	@RequestMapping(value="/bookWithoutId")
-//	public List<Book> getAllBooksWithoutId(){
-//		System.out.println("Wchodzę w withoutId");
-//		return orderpackService.getAllBooksWithoutId();
-//	}
 }

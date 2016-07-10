@@ -1,3 +1,6 @@
+/**
+ * Created by Tomasz Dębski on 10.07.10.
+ */
 angular.module('app.directive.usernameAvailable', [])
 .directive('usernameAvailableDirective', function($timeout, $q,$http) {
   return {

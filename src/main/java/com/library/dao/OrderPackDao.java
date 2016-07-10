@@ -19,6 +19,4 @@ public interface OrderPackDao {
 	void updateOrderPack(OrderPack orderPack);
 	
 	void removeOrderPack(OrderPack orderPack);
-	
-//	List<OrderPack> getAllOrderPacksWithoutId();
 }

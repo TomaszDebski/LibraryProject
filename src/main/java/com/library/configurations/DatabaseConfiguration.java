@@ -20,6 +20,15 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
  */
 @Configuration
 public class DatabaseConfiguration {
+
+	@Autowired
+	private Environment env;
+
+	@Autowired
+	private DataSource dataSource;
+
+	@Autowired
+	private LocalContainerEntityManagerFactoryBean entityManagerFactory;
 	
 	@Bean
 	  public DataSource dataSource() {
@@ -35,18 +44,13 @@ public class DatabaseConfiguration {
 	  public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 	    LocalContainerEntityManagerFactoryBean entityManagerFactory =
 	        new LocalContainerEntityManagerFactoryBean();
-	    
 	    entityManagerFactory.setDataSource(dataSource);
-	    
-	    // Classpath scanning of @Component, @Service, etc annotated class
 	    entityManagerFactory.setPackagesToScan(
 	        env.getProperty("entitymanager.packagesToScan"));
 	    
-	    // Vendor adapter
 	    HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 	    entityManagerFactory.setJpaVendorAdapter(vendorAdapter);
 	    
-	    // Hibernate properties
 	    Properties additionalProperties = new Properties();
 	    additionalProperties.put(
 	        "hibernate.dialect", 
@@ -62,9 +66,6 @@ public class DatabaseConfiguration {
 	    return entityManagerFactory;
 	  }
 
-	  /**
-	   * Declare the transaction manager.
-	   */
 	  @Bean
 	  public JpaTransactionManager transactionManager() {
 	    JpaTransactionManager transactionManager = 
@@ -78,16 +79,4 @@ public class DatabaseConfiguration {
 	  public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
 	    return new PersistenceExceptionTranslationPostProcessor();
 	  }
-
-	  // Private fields
-	  
-	  @Autowired
-	  private Environment env;
-
-	  @Autowired
-	  private DataSource dataSource;
-
-	  @Autowired
-	  private LocalContainerEntityManagerFactoryBean entityManagerFactory;
-
 }

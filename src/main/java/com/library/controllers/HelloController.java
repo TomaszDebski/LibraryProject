@@ -20,19 +20,8 @@ public class HelloController {
 	@ResponseBody
 	public Principal getUser(Principal user){
 		if (user == null){
-			System.out.println("Jestem w IndexController.class user is null");
 			return null;
 		}
-		System.out.println("Jestem w IndexController.class + user: " + user.toString());
 		return user;
 	}
-	
-	@RequestMapping("/resource")
-	public Map<String, Object> home() {
-		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("id", UUID.randomUUID().toString());
-		model.put("content", "Hello World")	;
-		return model;
-	}
-
 }

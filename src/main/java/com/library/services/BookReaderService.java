@@ -4,6 +4,10 @@ import com.library.entities.BookReader;
 
 import java.util.List;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 public interface BookReaderService {
 
 BookReader getBookReaderbyId(long id);
@@ -15,9 +19,7 @@ BookReader getBookReaderbyId(long id);
 	void updateBookReader(BookReader bookReader);
 	
 	void removeBookReader(BookReader bookReader);
-	
-	List<BookReader> getAllBookReaderGraph();
-	
+
 	BookReader getBookReaderByUsername(String username);
 	
 	
