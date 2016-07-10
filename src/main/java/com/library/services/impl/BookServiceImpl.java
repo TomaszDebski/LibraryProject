@@ -8,6 +8,10 @@ import com.library.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Service
 public class BookServiceImpl implements BookService {
 	

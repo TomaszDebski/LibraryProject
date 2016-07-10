@@ -11,6 +11,10 @@ import com.library.dao.BookDao;
 import com.library.entities.Book;
 import org.springframework.stereotype.Repository;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Repository
 @Transactional
 public class BookDaoImpl implements BookDao {

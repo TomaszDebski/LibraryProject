@@ -2,7 +2,7 @@ package com.library.services.impl;
 
 import java.util.List;
 
-import com.library.dao.OrederPackDao;
+import com.library.dao.OrderPackDao;
 import com.library.entities.OrderPack;
 import com.library.services.OrderPackService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class OrderPackServiceImpl implements OrderPackService {
 	
 	@Autowired
-	OrederPackDao orderPackDao;
+	OrderPackDao orderPackDao;
 
 	@Override
 	public OrderPack getOrderPackbyId(long id) {

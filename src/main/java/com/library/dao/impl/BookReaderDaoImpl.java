@@ -15,6 +15,10 @@ import com.library.dao.BookReaderDao;
 import com.library.entities.BookReader;
 import org.springframework.stereotype.Repository;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Repository
 @Transactional
 public class BookReaderDaoImpl implements BookReaderDao {

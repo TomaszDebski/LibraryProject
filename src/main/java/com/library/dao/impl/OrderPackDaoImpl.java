@@ -6,14 +6,17 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-import com.library.dao.OrederPackDao;
+import com.library.dao.OrderPackDao;
 import com.library.entities.OrderPack;
 import org.springframework.stereotype.Repository;
 
-
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @Repository
 @Transactional
-public class OrderPackDaoImpl implements OrederPackDao {
+public class OrderPackDaoImpl implements OrderPackDao {
 	
 	@PersistenceContext
 	EntityManager entityManager;

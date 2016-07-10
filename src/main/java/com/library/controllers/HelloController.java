@@ -9,24 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 @RestController
 public class HelloController {
-	
-	@RequestMapping("/admin")
-	public String admin(){
-		return "jestem adminem";
-	}
-	
-//	@RequestMapping("/user")
-//	public String user(){ 
-//		return "jestem Userem";
-//	}
-	
-//	@RequestMapping("/user")
-//	public Principal user(Principal user) {
-//		System.out.println(user.getName());
-//		return user;
-//	}
 	
 	@RequestMapping("/findUser")
 	@ResponseBody

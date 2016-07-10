@@ -4,7 +4,10 @@ import com.library.entities.BookReader;
 
 import java.util.List;
 
-
+/**
+ * @author Tomasz Dębski
+ *
+ */
 public interface BookReaderDao {
 
 	BookReader getBookReaderbyId(long id);

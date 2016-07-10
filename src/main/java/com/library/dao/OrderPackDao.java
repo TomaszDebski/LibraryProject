@@ -4,7 +4,11 @@ import com.library.entities.OrderPack;
 
 import java.util.List;
 
-public interface OrederPackDao {
+/**
+ * @author Tomasz Dębski
+ *
+ */
+public interface OrderPackDao {
 
 	OrderPack getOrderPackbyId(long id);
 	

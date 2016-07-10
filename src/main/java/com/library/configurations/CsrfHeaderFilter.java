@@ -13,7 +13,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.WebUtils;
 
 /**
- * @author Tomek1
+ * @author Tomasz Dębski
  *
  */
 public class CsrfHeaderFilter extends OncePerRequestFilter {

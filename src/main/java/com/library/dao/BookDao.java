@@ -4,6 +4,10 @@ import com.library.entities.Book;
 
 import java.util.List;
 
+/**
+ * @author Tomasz Dębski
+ *
+ */
 public interface BookDao {
 
 	Book getBookbyId(long id);

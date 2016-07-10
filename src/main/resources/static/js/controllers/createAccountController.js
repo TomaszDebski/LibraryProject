@@ -7,8 +7,9 @@ angular.module('app.controller.createAccount', [])
 		bookReader.readerName = data.username;
 		bookReader.password = data.password;
 		bookReaderService.save(bookReader,function(){
+			console.log("successcreatedUser");
 			$scope.successCreatedUser = true;
-//			$location.path("/");
+			// $location.path("/");
 		});
 		
 	}
