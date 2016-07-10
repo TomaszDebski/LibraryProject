@@ -1,4 +1,4 @@
-package configurations;
+package com.library.configurations;
 
 import java.util.Properties;
 

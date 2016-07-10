@@ -1,9 +1,9 @@
-package dao;
+package com.library.dao;
+
+import com.library.entities.BookReader;
 
 import java.util.List;
 
-import com.example.entities.Book;
-import com.example.entities.BookReader;
 
 public interface BookReaderDao {
 
