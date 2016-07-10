@@ -7,3 +7,4 @@ Used technologies:
 - AngularJS
 - Hibernate
 - JPA
+- H2
