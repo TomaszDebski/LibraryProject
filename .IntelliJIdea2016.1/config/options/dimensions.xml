@@ -1,0 +1,10 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="774" y="254" />
+    <location key="new project wizard.0.0.1920.1080" x="550" y="100" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="996" y="230" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="708" y="399" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="424" height="500" />
+    <size key="new project wizard.0.0.1920.1080" width="883" height="806" />
+  </component>
+</application>
