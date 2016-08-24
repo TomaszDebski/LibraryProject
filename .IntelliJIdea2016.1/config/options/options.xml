@@ -1,16 +1,31 @@
 <application>
   <component name="PropertiesComponent">
     <property name="evlsprt3.16" value="10" />
-    <property name="installed.kotlin.plugin.version" value="1.0.1-release-IJ143-46" />
+    <property name="installed.kotlin.plugin.version" value="1.0.3-release-IJ2016.1-120" />
     <property name="installation.uid" value="50f5d380-3572-4f79-afb2-3ad7ae63721e" />
-    <property name="android-component-compatibility-check" value="1467987671382" />
+    <property name="android-component-compatibility-check" value="1471674456119" />
     <property name="ignore.ibus.blocking.warn.message" value="true" />
-    <property name="project.wizard.group" value="spring" />
-    <property name="file.chooser.recent.files" value="/usr/lib/jvm/java-8-oracle" />
+    <property name="project.wizard.group" value="org.jetbrains.idea.maven.wizards.MavenModuleBuilder" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/IdeaProjects/SpringHibernateDemo&#10;/home/tomek/IdeaProjects/LibraryProject&#10;/usr/lib/jvm/java-8-oracle" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="toolwindow.stripes.buttons.info.shown" value="true" />
     <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
-    <property name="project.wizard.template" value="Java" />
-    <property name="lastTip" value="1" />
+    <property name="project.wizard.template" value="Maven" />
+    <property name="lastTip" value="38" />
+    <property name="ChangesViewManager.DETAILS_SPLITTER_PROPORTION" value="0.5" />
+    <property name="spring.initializr.service.url.history" value="https://start.spring.io" />
+    <property name="spring.initializr.service.url.last" value="https://start.spring.io" />
+    <property name="selected.color.option.type" value="IDENTIFIER_UNDER_CARET_ATTRIBUTES" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="PLUGIN_FILTER" value="live&#10;liv&#10;angular&#10;angu" />
+    <property name="show.indent.detected.notification" value="false" />
+    <property name="MavenModuleWizard.inheritGroupId" value="true" />
+    <property name="MavenModuleWizard.inheritVersion" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="SpringBeansModulesPanel[0]" value="0.11025358" />
+    <property name="decompiler.legal.notice.accepted" value="true" />
+    <property name="ProjectStructure.SecondLevelElements" value="0.20119047" />
+    <property name="fileTypeChangedCounter" value="1" />
   </component>
 </application>

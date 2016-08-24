@@ -1,9 +1,188 @@
 <application>
+  <component name="StatisticsApplicationUsages">
+    <group name="JavaScript versions">
+      <project id="SpringBootDemo" values="ECMAScript 5.1" collectionTime="1470416315968" />
+      <project id="SpringHibernateDemo" values="ECMAScript 5.1" collectionTime="1468263159792" />
+      <project id="SpringAngularUploaddemo" values="ECMAScript 5.1" collectionTime="1471625309435" />
+      <project id="FirstProject" values="ECMAScript 5.1" collectionTime="1468145298076" />
+      <project id="SpringHibernateJPAdemo" values="ECMAScript 5.1" collectionTime="1468339029039" />
+      <project id="LibraryProject" values="ECMAScript 5.1" collectionTime="1470415643572" />
+      <project id="JDBCDemo" values="ECMAScript 5.1" collectionTime="1471975352184" />
+      <project id="HibernateDemo" values="ECMAScript 5.1" collectionTime="1470757639412" />
+      <project id="SecondProject" values="ECMAScript 5.1" collectionTime="1467988701277" />
+      <project id="SpringMVCTest" values="ECMAScript 5.1" collectionTime="1470416061154" />
+    </group>
+    <group name="module type">
+      <project id="SpringBootDemo" values="JAVA_MODULE" collectionTime="1470416315899" />
+      <project id="SpringHibernateDemo" values="JAVA_MODULE" collectionTime="1468263159753" />
+      <project id="SpringAngularUploaddemo" values="JAVA_MODULE" collectionTime="1471625308312" />
+      <project id="FirstProject" values="JAVA_MODULE" collectionTime="1468145293833" />
+      <project id="SpringHibernateJPAdemo" values="JAVA_MODULE" collectionTime="1468339028021" />
+      <project id="LibraryProject" values="JAVA_MODULE" collectionTime="1470415642484" />
+      <project id="JDBCDemo" values="JAVA_MODULE" collectionTime="1471975351385" />
+      <project id="HibernateDemo" values="JAVA_MODULE" collectionTime="1470757638387" />
+      <project id="SecondProject" values="JAVA_MODULE" collectionTime="1467988700515" />
+      <project id="SpringMVCTest" values="JAVA_MODULE" collectionTime="1470416061068" />
+    </group>
+    <group name="vcs">
+      <project id="LibraryProject" values="Git" collectionTime="1470415642483" />
+      <project id="FirstProject" values="Git" collectionTime="1468145293832" />
+    </group>
+    <group name="Spring Boot">
+      <project id="SpringAngularUploaddemo" values="RunConfigsPerProject_1,application.properties" collectionTime="1471625309546" />
+      <project id="SpringHibernateJPAdemo" values="RunConfigsPerProject_1,application.properties" collectionTime="1468339029107" />
+      <project id="SpringBootDemo" values="application.properties,RunConfigsPerProject_1" collectionTime="1470416315981" />
+      <project id="LibraryProject" values="application.properties,RunConfigsPerProject_1" collectionTime="1470415643632" />
+    </group>
+    <group name="run-configuration-type">
+      <project id="SpringAngularUploaddemo" values="SpringBootApplicationConfigurationType" collectionTime="1471625308313" />
+      <project id="SpringHibernateJPAdemo" values="SpringBootApplicationConfigurationType" collectionTime="1468339028022" />
+      <project id="SpringBootDemo" values="SpringBootApplicationConfigurationType" collectionTime="1470416315899" />
+      <project id="LibraryProject" values="SpringBootApplicationConfigurationType" collectionTime="1470415642486" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="SpringAngularUploaddemo" values="Application" collectionTime="1471625308314" />
+      <project id="JDBCDemo" values="Application" collectionTime="1471975351386" />
+      <project id="HibernateDemo" values="Application" collectionTime="1470757638388" />
+      <project id="LibraryProject" values="Application" collectionTime="1470415642486" />
+    </group>
+    <group name="file-type">
+      <project id="SpringBootDemo" values="JAVA,ARCHIVE,Properties,IDEA_MODULE,XML,PLAIN_TEXT" collectionTime="1470416315954" />
+      <project id="SpringHibernateDemo" values="JSP,IDEA_MODULE,ARCHIVE,XML" collectionTime="1468263159790" />
+      <project id="SpringAngularUploaddemo" values="PLAIN_TEXT,ARCHIVE,HTML,JAVA,Properties,XML,IDEA_MODULE" collectionTime="1471625308574" />
+      <project id="FirstProject" values="IDEA_MODULE,ARCHIVE" collectionTime="1468145294119" />
+      <project id="SpringHibernateJPAdemo" values="JAVA,PLAIN_TEXT,IDEA_MODULE,Properties,XML,SQL,ARCHIVE" collectionTime="1468339028193" />
+      <project id="LibraryProject" values="ARCHIVE,IDEA_MODULE,JAVA,PLAIN_TEXT,HTML,XML,Properties,JavaScript" collectionTime="1470415642687" />
+      <project id="JDBCDemo" values="IDEA_MODULE,XML,JAVA" collectionTime="1471975351542" />
+      <project id="HibernateDemo" values="JAVA,IDEA_MODULE,XML,SQL" collectionTime="1470757638636" />
+      <project id="SecondProject" values="XML,ARCHIVE,JSP,IDEA_MODULE" collectionTime="1467988700616" />
+      <project id="SpringMVCTest" values="IDEA_MODULE,JSP,XML,ARCHIVE" collectionTime="1470416061144" />
+    </group>
+    <group name="jdbc-datasource">
+      <project id="JDBCDemo" values="MySQL/5.5.50-0ubuntu0.14.04.1" collectionTime="1471975352182" />
+    </group>
+    <group name="Spring MVC">
+      <project id="SpringHibernateDemo" values="fileset_webXml,mvcModelsInProject_1,fileset_webXml,viewResolvers_0" collectionTime="1468263159820" />
+      <project id="SpringAngularUploaddemo" values="mvcModelsInProject_0" collectionTime="1471625309464" />
+      <project id="SpringBootDemo" values="mvcModelsInProject_0" collectionTime="1470416315979" />
+      <project id="SpringHibernateJPAdemo" values="mvcModelsInProject_0" collectionTime="1468339029067" />
+      <project id="LibraryProject" values="mvcModelsInProject_0" collectionTime="1470415643594" />
+      <project id="SecondProject" values="mvcModelsInProject_1,viewResolvers_0,fileset_webXml,fileset_webXml" collectionTime="1467988701489" />
+      <project id="SpringMVCTest" values="mvcModelsInProject_0" collectionTime="1470416061161" />
+    </group>
+    <group name="jdbc-driver">
+      <project id="JDBCDemo" values="com.mysql.jdbc.Driver" collectionTime="1471975352182" />
+    </group>
+    <group name="spring">
+      <project id="SpringBootDemo" values="fileset_autodetect_com.intellij.spring.boot.model.SpringBootFileSet" collectionTime="1470416315977" />
+      <project id="SpringHibernateDemo" values="fileset_autodetect_com.intellij.spring.web.config.webXml.XmlServletFileSet,fileset_autodetect_com.intellij.spring.web.config.webXml.XmlServletFileSet" collectionTime="1468263159800" />
+      <project id="SpringAngularUploaddemo" values="xmlNS_www.springframework.org/schema/context,fileset_configFiles5,fileset_autodetect_com.intellij.spring.boot.model.SpringBootFileSet,fileset_xmlContext" collectionTime="1471625309462" />
+      <project id="FirstProject" values="fileset_autodetect_NONE" collectionTime="1468145298097" />
+      <project id="SpringHibernateJPAdemo" values="fileset_autodetect_com.intellij.spring.boot.model.SpringBootFileSet" collectionTime="1468339029059" />
+      <project id="LibraryProject" values="fileset_autodetect_com.intellij.spring.boot.model.SpringBootFileSet" collectionTime="1470415643586" />
+      <project id="HibernateDemo" values="xmlNS_www.springframework.org/schema/tx,fileset_configFiles5,fileset_xmlContext,fileset_autodetect_NONE" collectionTime="1470757639415" />
+      <project id="SecondProject" values="fileset_autodetect_com.intellij.spring.web.config.webXml.XmlServletFileSet,fileset_autodetect_com.intellij.spring.web.config.webXml.XmlServletFileSet" collectionTime="1467988701374" />
+      <project id="SpringMVCTest" values="fileset_autodetect_NONE" collectionTime="1470416061160" />
+    </group>
+    <group name="frameworks">
+      <project id="SpringBootDemo" values="Spring" collectionTime="1470416315899" />
+      <project id="SpringHibernateDemo" values="web,hibernate,Spring" collectionTime="1468263159753" />
+      <project id="SpringAngularUploaddemo" values="Spring" collectionTime="1471625308312" />
+      <project id="FirstProject" values="Spring" collectionTime="1468145293833" />
+      <project id="SpringHibernateJPAdemo" values="Spring,web" collectionTime="1468339028021" />
+      <project id="LibraryProject" values="Spring,web" collectionTime="1470415642484" />
+      <project id="HibernateDemo" values="Spring" collectionTime="1470757638387" />
+      <project id="SecondProject" values="Spring,web,hibernate" collectionTime="1467988700514" />
+      <project id="SpringMVCTest" values="web,Spring" collectionTime="1470416061068" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="SpringBootDemo" values="Project,Project" collectionTime="1470416315968" />
+      <project id="SpringHibernateDemo" values="Project,Project" collectionTime="1468263159792" />
+      <project id="SpringAngularUploaddemo" values="Project,Project" collectionTime="1471625309435" />
+      <project id="FirstProject" values="Project,Project" collectionTime="1468145298076" />
+      <project id="SpringHibernateJPAdemo" values="Project,Project" collectionTime="1468339029039" />
+      <project id="LibraryProject" values="Project,Project" collectionTime="1470415643572" />
+      <project id="JDBCDemo" values="Project,Project" collectionTime="1471975352184" />
+      <project id="HibernateDemo" values="Project,Project" collectionTime="1470757639411" />
+      <project id="SecondProject" values="Project,Project" collectionTime="1467988701277" />
+      <project id="SpringMVCTest" values="Project,Project" collectionTime="1470416061154" />
+    </group>
+    <group name="Git">
+      <project id="SpringBootDemo" values="config.repo.sync.NOT_DECIDED,config.ssh.enabled,config.push.autoupdate.disabled,config.save.policy.STASH,config.force.push.enabled,config.push.update.all.roots.enabled,config.warn.about.detached.enabled,config.cherry-pick.autocommit.disabled,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled" collectionTime="1470416315966" />
+      <project id="SpringHibernateDemo" values="config.update.type.BRANCH_DEFAULT,config.push.update.all.roots.enabled,config.repo.sync.NOT_DECIDED,config.warn.about.crlf.enabled,config.ssh.enabled,config.cherry-pick.autocommit.disabled,config.save.policy.STASH,config.force.push.enabled,config.warn.about.detached.enabled,config.push.autoupdate.disabled" collectionTime="1468263159791" />
+      <project id="SpringAngularUploaddemo" values="config.save.policy.STASH,config.warn.about.crlf.enabled,config.force.push.enabled,config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.detached.enabled,config.push.autoupdate.disabled,config.push.update.all.roots.enabled,config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED" collectionTime="1471625308702" />
+      <project id="FirstProject" values="data.remotes.in.project.0,config.force.push.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.ssh.enabled,data.remote.branches.count.0,config.update.type.BRANCH_DEFAULT,config.push.autoupdate.disabled,config.save.policy.STASH,data.local.branches.count.0,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,config.repo.sync.NOT_DECIDED" collectionTime="1468145294371" />
+      <project id="SpringHibernateJPAdemo" values="config.ssh.enabled,config.push.autoupdate.disabled,config.force.push.enabled,config.push.update.all.roots.enabled,config.save.policy.STASH,config.cherry-pick.autocommit.disabled,config.warn.about.crlf.enabled,config.warn.about.detached.enabled,config.repo.sync.NOT_DECIDED,config.update.type.BRANCH_DEFAULT" collectionTime="1468339028334" />
+      <project id="LibraryProject" values="config.ssh.enabled,config.warn.about.crlf.enabled,data.local.branches.count.1,config.repo.sync.NOT_DECIDED,data.remote.branches.count.1,data.remotes.in.project.1,config.force.push.enabled,config.push.autoupdate.disabled,config.push.update.all.roots.enabled,config.warn.about.detached.enabled,config.cherry-pick.autocommit.disabled,config.update.type.BRANCH_DEFAULT,config.save.policy.STASH" collectionTime="1470415642845" />
+      <project id="JDBCDemo" values="config.save.policy.STASH,config.push.autoupdate.disabled,config.cherry-pick.autocommit.disabled,config.ssh.enabled,config.repo.sync.NOT_DECIDED,config.push.update.all.roots.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.detached.enabled,config.force.push.enabled,config.warn.about.crlf.enabled" collectionTime="1471975351585" />
+      <project id="HibernateDemo" values="config.force.push.enabled,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.save.policy.STASH,config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED,config.warn.about.detached.enabled,config.push.autoupdate.disabled" collectionTime="1470757638758" />
+      <project id="SecondProject" values="config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.ssh.enabled,config.force.push.enabled,config.save.policy.STASH,config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,config.update.type.BRANCH_DEFAULT" collectionTime="1467988700644" />
+      <project id="SpringMVCTest" values="config.warn.about.detached.enabled,config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled,config.cherry-pick.autocommit.disabled,config.push.update.all.roots.enabled,config.ssh.enabled,config.repo.sync.NOT_DECIDED,config.save.policy.STASH,config.push.autoupdate.disabled" collectionTime="1470416061152" />
+    </group>
+    <group name="libraries">
+      <project id="SpringBootDemo" values="spring,EJB,WebSocket,spring-boot,spring-mvc,BeanValidation" collectionTime="1470416315960" />
+      <project id="SpringHibernateDemo" values="TransactionJavaee,spring-data-jpa,hibernate,spring-mvc,spring" collectionTime="1468263159790" />
+      <project id="SpringAngularUploaddemo" values="TransactionJavaee,WebSocket,spring-data-jpa,spring,hibernate,spring-boot,EJB,spring-mvc,BeanValidation" collectionTime="1471625308665" />
+      <project id="FirstProject" values="spring" collectionTime="1468145294248" />
+      <project id="SpringHibernateJPAdemo" values="spring,BeanValidation,EJB,WebSocket,spring-data-jpa,hibernate,spring-boot,TransactionJavaee,spring-mvc" collectionTime="1468339028305" />
+      <project id="LibraryProject" values="hibernate,spring-mvc,spring-data-jpa,TransactionJavaee,spring,WebSocket,spring-security,spring-boot,BeanValidation,EJB" collectionTime="1470415642795" />
+      <project id="JDBCDemo" values="spring" collectionTime="1471975351555" />
+      <project id="HibernateDemo" values="spring,hibernate,TransactionJavaee" collectionTime="1470757638705" />
+      <project id="SecondProject" values="spring-mvc,spring-data-jpa,hibernate,spring,spring-security,TransactionJavaee" collectionTime="1467988700636" />
+      <project id="SpringMVCTest" values="spring-mvc,spring" collectionTime="1470416061146" />
+    </group>
+    <group name="Libraries by jars">
+      <project id="SpringAngularUploaddemo" values="spring-boot_1.4,spring-mvc_4.3,spring-core_4.2,spring-data-commons_1.12,spring-data-jpa_1.10" collectionTime="1471625308699" />
+      <project id="JDBCDemo" values="spring-core_4.2" collectionTime="1471975351583" />
+      <project id="LibraryProject" values="spring-security_4.0,spring-data-commons_1.11,spring-mvc_4.2,spring-data-jpa_1.9,spring-boot_1.3,spring-core_4.2" collectionTime="1470415642824" />
+      <project id="SpringMVCTest" values="spring-mvc_4.3,spring-core_4.3" collectionTime="1470416061152" />
+      <project id="HibernateDemo" values="spring-core_4.3" collectionTime="1470757638756" />
+      <project id="SpringBootDemo" values="spring-core_4.3,spring-boot_1.4,spring-mvc_4.3" collectionTime="1470416315966" />
+    </group>
+    <group name="language-level">
+      <project id="SpringBootDemo" values="JDK_1_8" collectionTime="1470416315966" />
+      <project id="SpringHibernateDemo" values="JDK_1_5,JDK_1_8" collectionTime="1468263159791" />
+      <project id="SpringAngularUploaddemo" values="JDK_1_8" collectionTime="1471625308700" />
+      <project id="FirstProject" values="JDK_1_8" collectionTime="1468145294341" />
+      <project id="SpringHibernateJPAdemo" values="JDK_1_8" collectionTime="1468339028332" />
+      <project id="LibraryProject" values="JDK_1_8" collectionTime="1470415642824" />
+      <project id="JDBCDemo" values="JDK_1_8" collectionTime="1471975351584" />
+      <project id="HibernateDemo" values="JDK_1_5,JDK_1_8" collectionTime="1470757638757" />
+      <project id="SecondProject" values="JDK_1_8" collectionTime="1467988700643" />
+      <project id="SpringMVCTest" values="JDK_1_8,JDK_1_5" collectionTime="1470416061152" />
+    </group>
+  </component>
   <component name="UsageTrigger">
     <counts>
-      <entry feature="ideaapp.started" count="1" />
-      <entry feature="welcome.screen.WelcomeScreen.Configure" count="1" />
-      <entry feature="welcome.screen.WelcomeScreen.CreateNewProject" count="1" />
+      <entry feature="CreateFile.CreateFileAction" count="3" />
+      <entry feature="CreateFile.CreateSpringConfigAction" count="4" />
+      <entry feature="OpenInBrowser.Chrome" count="1" />
+      <entry feature="execute.Application.Debug" count="20" />
+      <entry feature="execute.Application.Run" count="249" />
+      <entry feature="execute.MavenRunConfiguration.Run" count="33" />
+      <entry feature="execute.SpringBootApplicationConfigurationType.Debug" count="9" />
+      <entry feature="execute.SpringBootApplicationConfigurationType.Run" count="15" />
+      <entry feature="ide.settings.Appearance" count="5" />
+      <entry feature="ide.settings.Code_Style" count="1" />
+      <entry feature="ide.settings.Colors_&amp;_Fonts" count="1" />
+      <entry feature="ide.settings.Console_Font" count="1" />
+      <entry feature="ide.settings.Font" count="2" />
+      <entry feature="ide.settings.GitHub" count="1" />
+      <entry feature="ide.settings.Plugins" count="1" />
+      <entry feature="ide.settings.Project_Structure" count="1" />
+      <entry feature="ide.settings.Scopes" count="1" />
+      <entry feature="ide.settings.Version_Control" count="1" />
+      <entry feature="idea.caches.invalidated" count="4" />
+      <entry feature="ideaapp.started" count="39" />
+      <entry feature="spring.SpringConfigurationCheck.FileCount.java" count="4" />
+      <entry feature="spring.SpringConfigurationCheck.FileCount.xml" count="5" />
+      <entry feature="spring.SpringFacetInspection.AddFacetFix" count="1" />
+      <entry feature="spring.SpringFacetInspection.ConfigureFileSetFix" count="4" />
+      <entry feature="uml.ShowDiagram.SpringLocalModels" count="3" />
+      <entry feature="uml.ShowDiagram.SpringLocalModels.popup" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.CreateNewProject" count="15" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="4" />
     </counts>
   </component>
 </application>

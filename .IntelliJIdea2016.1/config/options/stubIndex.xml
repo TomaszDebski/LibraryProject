@@ -2,14 +2,6 @@
   <component name="FileBasedIndex">
     <option name="registeredIndices">
       <list>
-        <option value="sc.implicit.function.name" />
-        <option value="sc.self.type.class.name.key" />
-        <option value="sc.super.class.name" />
-        <option value="sc.stable.alias.name" />
-        <option value="sc.type.alias.name" />
-        <option value="sc.class.parameter.name" />
-        <option value="sc.variable.name" />
-        <option value="sc.value.name" />
         <option value="sc.annotatde.member.name" />
         <option value="sc.implcit.object" />
         <option value="sc.java.class.name.in.package" />
@@ -103,6 +95,22 @@
         <option value="Css.class" />
         <option value="dom.elementClass" />
         <option value="dom.namespaceKey" />
+        <option value="angularjs.symbol.index" />
+        <option value="angularjs.delimiter.index" />
+        <option value="angularjs.directives.doc.index" />
+        <option value="angularjs.ui.router.states.index" />
+        <option value="angularjs.filter.index" />
+        <option value="angularjs.module.index" />
+        <option value="angularjs.controller.index" />
+        <option value="angularjs.directives.index" />
+        <option value="sc.implicit.function.name" />
+        <option value="sc.self.type.class.name.key" />
+        <option value="sc.super.class.name" />
+        <option value="sc.stable.alias.name" />
+        <option value="sc.type.alias.name" />
+        <option value="sc.class.parameter.name" />
+        <option value="sc.variable.name" />
+        <option value="sc.value.name" />
       </list>
     </option>
   </component>

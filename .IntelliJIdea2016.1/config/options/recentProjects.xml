@@ -2,10 +2,20 @@
   <component name="RecentProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/IdeaProjects/JavaAlgorithms" />
+        <option value="$USER_HOME$/IdeaProjects/JDBCDemo" />
+        <option value="$USER_HOME$/IdeaProjects/FirstSpirngMVCdemo" />
+        <option value="$USER_HOME$/IdeaProjects/SpringAngularUploaddemo" />
+        <option value="$USER_HOME$/IdeaProjects/HibernateDemo" />
+        <option value="$USER_HOME$/IdeaProjects/SpringBootDemo" />
+        <option value="$USER_HOME$/IdeaProjects/SpringMVCTest" />
+        <option value="$USER_HOME$/IdeaProjects/LibraryProject" />
+        <option value="$USER_HOME$/IdeaProjects/SpringHibernateJPAdemo" />
         <option value="$USER_HOME$/IdeaProjects/FirstProject" />
+        <option value="$USER_HOME$/IdeaProjects/SecondProject" />
       </list>
     </option>
-    <option name="lastPath" value="$USER_HOME$/IdeaProjects/FirstProject" />
+    <option name="lastPath" value="$USER_HOME$/IdeaProjects/JavaAlgorithms" />
     <option name="additionalInfo">
       <map>
         <entry key="$USER_HOME$/IdeaProjects/FirstProject">
@@ -14,7 +24,128 @@
               <option name="build" value="IU-145.1617" />
               <option name="productionCode" value="IU" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1467987772619" />
+              <option name="projectOpenTimestamp" value="1468145244361" />
+              <option name="buildTimestamp" value="1464904800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/FirstSpirngMVCdemo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.2070" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1471702095221" />
+              <option name="buildTimestamp" value="1470088800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/HibernateDemo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.1617" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1470755158358" />
+              <option name="buildTimestamp" value="1464904800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/JDBCDemo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.2070" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1471961628317" />
+              <option name="buildTimestamp" value="1470088800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/JavaAlgorithms">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.2070" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1472051760655" />
+              <option name="buildTimestamp" value="1470088800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/LibraryProject">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.1617" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1470414854098" />
+              <option name="buildTimestamp" value="1464904800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/SecondProject">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.1617" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1467988091196" />
+              <option name="buildTimestamp" value="1464904800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/SpringAngularUploaddemo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.2070" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1471625253184" />
+              <option name="buildTimestamp" value="1470088800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/SpringBootDemo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.1617" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1470416233325" />
+              <option name="buildTimestamp" value="1464904800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/SpringHibernateDemo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.1617" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1468263155689" />
+              <option name="buildTimestamp" value="1464904800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/SpringHibernateJPAdemo">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.1617" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1468338984843" />
+              <option name="buildTimestamp" value="1464904800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/SpringMVCTest">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-145.1617" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1470415723991" />
               <option name="buildTimestamp" value="1464904800000" />
             </RecentProjectMetaInfo>
           </value>

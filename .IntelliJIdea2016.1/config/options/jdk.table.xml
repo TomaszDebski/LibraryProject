@@ -3,7 +3,7 @@
     <jdk version="2">
       <name value="1.8" />
       <type value="JavaSDK" />
-      <version value="java version &quot;1.8.0_91&quot;" />
+      <version value="java version &quot;1.8.0_101&quot;" />
       <homePath value="/usr/lib/jvm/java-8-oracle" />
       <roots>
         <annotationsPath>
@@ -41,6 +41,8 @@
         </javadocPath>
         <sourcePath>
           <root type="composite">
+            <root type="simple" url="jar:///usr/lib/jvm/java-8-oracle/src.zip!/" />
+            <root type="simple" url="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/" />
             <root type="simple" url="jar:///usr/lib/jvm/java-8-oracle/src.zip!/" />
             <root type="simple" url="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/" />
           </root>
