@@ -1,0 +1,42 @@
+<div class="container col-md-4 col-md-offset-4">
+	<div class="alert alert-success" ng-show="successCreatedUser">Successfully created new account</div>
+	<form name="myForm" class="form-signin">
+	<h2 class="form-signin-heading">Create new account</h2>
+		<fieldset class="form-group">
+			<label for="username">Username</label> 
+			<input 
+			type="text" 
+			class="form-control" 
+			id="username"
+			name="username" 
+			placeholder="username" 
+			ng-model="data.username" 
+			required="required"
+			username-available-directive>
+			
+			<div class="has-error" ng-show="myForm.$dirty">
+				<span ng-show="myForm.username.$error.required && myForm.username.$dirty">This is a
+					required field</span>
+				<div ng-if="myForm.$error.usernameExists">username exists already</div>
+			</div>
+			
+			<label for="password">Password</label> 
+			<input 
+			type="password" 
+			class="form-control" 
+			id="password"
+			name="password" 
+			placeholder="password" 
+			ng-model="data.password" 
+			required="required">
+			
+			<div class="has-error" ng-show="myForm.$dirty">
+				<span ng-show="myForm.password.$error.required && myForm.password.$dirty">This is a
+					required field</span>
+			</div>
+		</fieldset>
+		<button type="submit" class="btn btn-primary" ng-click="crateAccount(data)"
+			ng-disabled="myForm.username.$error.required || myForm.password.$error.required || myForm.$error.usernameExists">Create account</button>
+	</form>
+</div>
+

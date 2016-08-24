@@ -1,0 +1,73 @@
+<div class="col-md-10 col-md-offset-1">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Author</th>
+				<th>category</th>
+				<th>Available</th>
+				<th>Borrow date</th>
+				<th>Return date</th>
+				<!--<th ng-show="isAdmin">Username</th>-->
+				<th ng-show="isAdmin">Edit book</th>
+				<th ng-show="isAdmin">Delete book</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="book in books">
+				<td>{{book.title}}</td>
+				<td>{{book.author}}</td>
+				<td>{{book.category}}</td>
+				<td><input type="checkbox" ng-checked="{{book.available}}" ng-disabled="true"></td>
+				<td>{{book.bookBorrowDate | date : format : timezone}}</td>
+				<td>{{book.returnDateBook | date : format : timezone}}</td>
+				<!--<td ng-show="isAdmin">{{book.orderPack}}</td>-->
+				<td ng-show="isAdmin"><button class="btn" ng-click="transfer(book)">Edit</button></td>
+				<td ng-show="isAdmin"><button class="btn btn-danger" ng-click="delete(book.id)">Delete</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<form name="myForm" ng-show="isAdmin">
+	<button type="button" class="btn btn-primary" ng-click="addNew()">Add new book</button>
+		<fieldset class="form-group">
+			<label for="title">title</label>
+			<input
+					type="text"
+					class="form-control"
+					id="title"
+					placeholder="title"
+					ng-model="data.title"
+					ng-disabled="isDisabled"
+					required>
+			<div class="has-error" ng-show="myForm.$dirty">
+				<span ng-show="myForm.title.$dirty && myForm.title.$error.required">This is a required field</span>
+			</div>
+			<label for="author">author</label>
+			<input
+					type="text"
+					class="form-control"
+					id="author"
+					placeholder="author"
+					ng-model="data.author"
+					ng-disabled="isDisabled"
+					required>
+			<div class="has-error" ng-show="myForm.$dirty">
+				<span ng-show="myForm.author.$dirty && myForm.author.$error.required">This is a required field</span>
+			</div>
+			<label for="category">category</label>
+			<input
+					type="text"
+					class="form-control"
+					id="category"
+					placeholder="category"
+					ng-model="data.category"
+					ng-disabled="isDisabled">
+		</fieldset>
+		<button type="submit" class="btn btn-primary" ng-click="save(data)"
+				ng-disabled="myForm.title.$error.required || myForm.author.$error.required"
+			>Save</button>
+	</form>
+</div>
+

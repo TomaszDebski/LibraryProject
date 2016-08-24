@@ -1,0 +1,36 @@
+<table class="table table-bordered">
+Site {{bookReader.readerName}}
+<thead>
+		<tr>
+			<th>Title</th>
+			<th>category</th>
+			<th>Borrow date</th>
+			<th>Return date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>{{book.title}}</td>
+			<td>{{book.category}}</td>
+			<td>{{book.bookBorrowDate | date : format : timezone}}</td>
+			<td>{{book.returnDateBook | date : format : timezone}}</td>
+		</tr>
+	</tbody>
+</table>
+
+2$ fee for each day of delay
+<form name="myForm">
+<div>
+	<label for="todayDate">Today Date</label> <input type="date" placeholder="yyyy-MM-dd" id="todayDate" name="date"
+		ng-model="todayDate"required/>
+		<span ng-show="myForm.date.$dirty && myForm.date.$error.date">
+		Incorrect Format, should be YYYY-MM-DD</span>
+		<span ng-show="myForm.date.$dirty && myForm.date.$error.required">Required!</span>
+</div>
+	<br/>
+		Fee {{fee}}
+		<br/>
+	<button type="submit" ng-disabled="myForm.$invalid" ng-click="calc()" class="btn">Calculate a fee</button>
+	<button type="submit" ng-disabled="myForm.$invalid" ng-click="confirm()" class="btn">Confirm</button>
+</form>
+	<button ng-click="back()" class="btn">Back</button>
